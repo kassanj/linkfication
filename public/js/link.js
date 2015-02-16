@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('li').each(function() {
-  $('li').wrap('<a href="#"/>');
+    var li = $(this);
+    li.wrapInner("<a href='"+li.text()+"></a>");
   });
 });
 
